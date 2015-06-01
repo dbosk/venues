@@ -1,0 +1,372 @@
+\documentclass[a3paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[british]{babel}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage[margin=1cm]{geometry}
+\usepackage{titling}
+\usepackage[dvipsnames,svgnames,x11names]{xcolor}
+\usepackage[hyphens]{url}
+\usepackage{xparse}
+
+\title{Conferences in Security and Privacy by Deadline}
+
+\begin{document}
+\pagestyle{empty}
+\begin{center}
+  \LARGE\bfseries\thetitle\footnote{%
+    Sources: 
+    \url{http://icsd.i2r.a-star.edu.sg/staff/jianying/conference-ranking.html},
+    \url{http://faculty.cs.tamu.edu/guofei/sec_conf_stat.htm},
+    \url{https://personal.cis.strath.ac.uk/changyu.dong/ranking.html},
+    \url{http://academic.research.microsoft.com/RankList?entitytype=3&topdomainid=2&subdomainid=2&last=0&orderby=1},
+    \url{https://scholar.google.com/citations?view_op=top_venues&vq=eng_computersecuritycryptography}.
+}
+\end{center}
+\DeclareDocumentCommand{\tierone}{}{\color{red}}
+\DeclareDocumentCommand{\tiertwo}{}{\color{orange}}
+\DeclareDocumentCommand{\tierthree}{}{\color{DarkGreen}}
+\DeclareDocumentCommand{\tierfour}{}{\color{blue}}
+\DeclareDocumentCommand{\tierfive}{}{\color{purple}}
+
+
+\begin{longtable}{p{2cm}p{7cm}llp{3cm}p{9cm}}
+  \textbf{Acronym}\footnote{%
+    {\tierone Tier 1}, {\tiertwo Tier 2}, {\tierthree Tier 3}, {\tierfour Tier 
+    4}, {\tierfive Tier 5}, Unknown ranking
+  } & \textbf{Title}
+  & \textbf{Submission} & \textbf{Event} & \textbf{LaTeX format}
+  & \textbf{Comment} \\
+  \toprule
+
+  \tierfour
+  IFIP SEC & IFIP International Information Security and Privacy Conference
+  & January & June & llncs, biblatex-lncs
+  & 14 pages total. \\
+
+  \midrule
+
+  \tierfour
+  ACNS & International Conference on Applied Cryptography and Network Security
+  & January & June & llncs, biblatex-lncs
+  & 18 pages incl.~references, appendices may be added without limit.
+  \\
+
+  \midrule
+
+  SIGCOMM & ACM Special Interest Group on Data Communication
+  & January & August & acm-alternate
+  & 12 pages excl.~references.
+  \\
+
+  \midrule
+
+  \tierone
+  USENIX SEC & USENIX Security Symposium
+  & February & August & usenix
+  & Submissions: 13 pages, excl.~bibliography and appendices.
+  Accepted papers: fit in 16 pages, incl.~bibliography and appendices.
+  \\
+
+  \midrule
+
+  \tierone
+  CRYPTO & International Cryptology Conference
+  & February & August & llncs, biblatex-lncs
+  & Submission: 18 pages excl.~references and appendices.
+  Accepted paper: 18 pages total.
+  \\
+
+  \midrule
+
+  \tiertwo
+  PETS & Privacy Enhancing Technologies Symposium
+  & February & July & acmproc
+  & 10 pages excl.~bibliography and appendices, 15 pages total.
+  \\
+
+  \midrule
+
+  \tierthree
+  CSF & Computer Security Foundations Symposium
+  & February & July & ieee
+  & 12 pages excl.~bibliography and appendices.
+  \\
+
+  \midrule
+
+  \tierfour
+  SACMAT & ACM Symposium on Access Control Models and Technologies
+  & February & June & acmproc
+  & 10 US letter pages excl.~appendices, 12 pages total.
+  \\
+
+  \midrule
+
+  \tierfour
+  SOUPS & Symposium On Usable Privacy and Security
+  & March & July & soups
+  & 12 pages excl.~bibliography and appendices,20 pages total.
+  \\
+
+  \midrule
+
+  PST & International Conference on Privacy, Security and Trust
+  & March & July & ieee
+  & Regular papers: up to 8 pages.
+  Short papers: up to 4 pages.
+  \\
+
+  \midrule
+
+  \tiertwo
+  PETS & Privacy Enhancing Technologies Symposium
+  & April & July & acmproc
+  & 10 pages excl.~bibliography and appendices, 15 pages total.
+  \\
+
+  \midrule
+
+  \tierfour
+  ESORICS & European Symposium on Research in Computer Security
+  & April & September & llncs, biblatex-lncs
+  & 16 pages excl.~bibliography and appendices, 20 pages total.
+  Purely theoretical papers, e.g. in cryptography, must be explicit about the 
+  relevance of the theory to the security of IT systems.
+  \\
+
+  \midrule
+
+  \tierfour
+  NSPW & New Security Paradigms Workshop
+  & April & September & acmproc
+  & Regular paper: 6--15 pages.
+  Student paper: 12 pages maximum.
+  \\
+
+  \midrule
+
+  \tierfive
+  SCN & Security and Cryptography for Networks
+  & April & September & llncs, biblatex-lncs
+  & 14 pages excluding the title page, bibliography and appendices.
+  \\
+
+  \midrule
+
+  P2P & International Conference on Peer-to-Peer Computing
+  & April & September & ieee
+  & 10 pages.
+  \\
+
+  \midrule
+
+  \tierfive
+  SAC & Conference on Selected Areas in Cryptography
+  & May & August & llncs, biblatex-lncs
+  & 12 pages excl.~bibliography and appendices, 24 pages total.
+  \\
+
+  \midrule
+
+  \tierone
+  CCS & ACM Conference on Computer and Communications Security
+  & May & November & acmproc
+  & 12 pages total.
+  \\
+
+  \midrule
+
+  COSN & ACM Conference on Online Social Networks
+  & May & October & acmproc
+  & Very selective.
+  Full papers: 12 pages incl.~references.
+  Short papers: 6 pages incl.~references.
+  \\
+
+  \midrule
+
+  \tierthree
+  ACSAC & Annual Computer Security Applications Conference
+  & June & December & acmproc
+  & 10 pages total.
+  \\
+
+  \midrule
+
+  \tierfour
+  IMA-CCC & IMA International Conference on Cryptography and Coding
+  & June & December & llncs, biblatex-lncs
+  & 14 pages excl.~title and abstract, bibliography and appendices.
+  \\
+
+  \midrule
+
+  \tierfour
+  SecureComm & International Conference on Security and Privacy in 
+  Communication Networks
+  & June & October & lnicst
+  & Regular papers: up to 18 pages.
+  Short papers: up to 9 pages.
+  Doctoral papers: 7 pages.
+  Posters: 5 pages.
+  \\
+
+  \midrule
+
+  WPES & Workshop on Privacy in the Electronic Society
+  & July & October & acmproc
+  & Regular paper: 10 pages excl.~appendices, 12 pages total.
+  Short paper: 4 pages total.
+  \\
+
+  \midrule
+
+  SEC-T & Technical Security
+  & July & September & ?
+  & Always in Stockholm \\
+
+  \midrule
+
+  INFOCOM & IEEE International Conference on Computer Communications
+  & July & April & ieee
+  & Strict 9 pages total.
+  IEEEtran: 10pt, conference, letterpaper.
+  \\
+
+  \midrule
+
+  \tiertwo
+  PETS & Privacy Enhancing Technologies Symposium
+  & August & July & acmproc
+  & 10 pages excl.~bibliography and appendices, 15 pages total.
+  \\
+
+  \midrule
+
+  \tiertwo
+  NDSS & ISOC Network and Distributed System Security Symposium
+  & August & February & ndss
+  & SENT Workshop on Security of Emerging Networking Technologies,
+  USEC Workshop on Usable Security.
+  \\
+
+  \midrule
+
+  \tierfive
+  ICISC & International Conference on Information Security and Cryptology
+  & August & November & llncs, biblatex-lncs
+  & 12 pages excl.~bibliography and appendices.
+  \\
+
+  \midrule
+
+  NSDI & USENIX Symposium on Networked Systems Design and Implementation
+  & September & April & usenix
+  & Not RoMEO green?
+  12 pages excl.~references.
+  \\
+
+  \midrule
+
+  PERCOM & IEEE International Conference on Pervasive Computing and 
+  Communications
+  & September & March & ieee
+  & 9 pages total.
+  \\
+
+  \midrule
+
+  \tierone
+  EUROCRYPT & International Conference on the Theory and Applications of 
+  Cryptographic Techniques
+  & September & April & llncs, biblatex-lncs
+  & Submission: 20 pages total.
+  Accepted paper: 30 pages total.
+  \\
+
+  \midrule
+
+  \tierfour
+  CODASPY & Conference on Data and Application Security and Privacy
+  & September & March & acmproc
+  & 10 pages double-column excl.~bibliography and appendices, 12 pages total.
+  \\
+
+  \midrule
+
+  \tierfour
+  PKC & IACR International Conference on Practice and Theory of Public-Key 
+  Cryptography
+  & October & March & llncs, biblatex-lncs
+  & 14 pages excl.~references and bibliography.
+  \\
+
+  \midrule
+
+  \tierfour
+  TCC & Theory of Cryptography Conference
+  & October & March & llncs, biblatex-lncs
+  & No page limit, reviewers are not required to read beyond the 14th page.
+  Presentation quality will be a strong factor in the acceptance decision.
+  Authors are strongly encouraged to post full versions of their submissions in 
+  a freely accessible online repository, such as the Cryptology ePrint archive.
+  \\
+
+  \midrule
+
+  SeSoc & IEEE International Workshop on Security in Social Networking
+  & October & March & ieee
+  & 6 pages excl.~references and appendices, 7 pages total.
+  Follow PERCOM instructions.
+  \\
+
+  \midrule
+
+  \tierone
+  S\&P & IEEE Symposium on Security and Privacy
+  & November & May & ieee
+  & Submission: 15 pages excl.~bibliography and appendices, 20 pages total.
+  Final: 16 pages total.
+  US Letter, not A4.
+  \\
+
+  \midrule
+
+  \tiertwo
+  PETS & Privacy Enhancing Technologies Symposium
+  & November & July & acmproc
+  & 10 pages excl.~bibliography and appendices, 15 pages total.
+  \\
+
+  \midrule
+
+  \tierthree
+  FSE & IACR Fast Software Encryption
+  & November & March & llncs, biblatex-lncs
+  & Submission: 20 pages incl.~references, may add appendices.
+  Final: 20 pages total.
+  \\
+
+  \midrule
+
+  \tierthree
+  DSN & IEEE/IFIP International Conference on Dependable Systems and Networks
+  & November & June & ieee
+  & Regular paper: 12 pages total.
+  Practical experience report: 8 pages total.
+  Demos: 8 pages total.
+  \\
+
+  \midrule
+
+  ICDCS & International Conference on Distributed Computing Systems
+  & November & June & ieee
+  & Very selective, good for dist.sys.~of all kinds \\
+
+  \bottomrule
+\end{longtable}
+
+
+\end{document}

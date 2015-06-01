@@ -1,0 +1,47 @@
+\documentclass[a3paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[british]{babel}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage[margin=1cm]{geometry}
+\usepackage{titling}
+\usepackage[dvipsnames,svgnames,x11names]{xcolor}
+\usepackage[hyphens]{url}
+\usepackage{xparse}
+
+\title{Schools in Security and Privacy by Deadline}
+
+\begin{document}
+\pagestyle{empty}
+\begin{center}
+  \LARGE\bfseries\thetitle\footnote{%
+    Sources: 
+    \url{http://icsd.i2r.a-star.edu.sg/staff/jianying/conference-ranking.html},
+    \url{http://faculty.cs.tamu.edu/guofei/sec_conf_stat.htm},
+    \url{https://personal.cis.strath.ac.uk/changyu.dong/ranking.html},
+    \url{http://academic.research.microsoft.com/RankList?entitytype=3&topdomainid=2&subdomainid=2&last=0&orderby=1},
+    \url{https://scholar.google.com/citations?view_op=top_venues&vq=eng_computersecuritycryptography}.
+}
+\end{center}
+\DeclareDocumentCommand{\tierone}{}{\color{red}}
+\DeclareDocumentCommand{\tiertwo}{}{\color{orange}}
+\DeclareDocumentCommand{\tierthree}{}{\color{DarkGreen}}
+\DeclareDocumentCommand{\tierfour}{}{\color{blue}}
+\DeclareDocumentCommand{\tierfive}{}{\color{purple}}
+
+
+\begin{longtable}{p{2cm}p{7cm}llp{3cm}p{9cm}}
+  \textbf{Acronym}\footnote{%
+    {\tierone Tier 1}, {\tiertwo Tier 2}, {\tierthree Tier 3}, {\tierfour Tier 
+    4}, {\tierfive Tier 5}, Tier 6--
+  } & \textbf{Title}
+  & \textbf{Submission} & \textbf{Event} & \textbf{LaTeX format}
+  & \textbf{Comment} \\
+  \toprule
+
+  \bottomrule
+\end{longtable}
+
+
+\end{document}
