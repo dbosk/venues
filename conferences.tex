@@ -15,26 +15,39 @@
 \begin{document}
 \pagestyle{empty}
 \begin{center}
-  \LARGE\bfseries\thetitle\footnote{%
-    Sources: 
-    \url{http://icsd.i2r.a-star.edu.sg/staff/jianying/conference-ranking.html},
-    \url{http://faculty.cs.tamu.edu/guofei/sec_conf_stat.htm},
-    \url{https://personal.cis.strath.ac.uk/changyu.dong/ranking.html},
-    \url{http://academic.research.microsoft.com/RankList?entitytype=3&topdomainid=2&subdomainid=2&last=0&orderby=1},
-    \url{https://scholar.google.com/citations?view_op=top_venues&vq=eng_computersecuritycryptography}.
-}
+  \LARGE\bfseries\thetitle
 \end{center}
-\DeclareDocumentCommand{\tierone}{}{\color{red}}
-\DeclareDocumentCommand{\tiertwo}{}{\color{orange}}
-\DeclareDocumentCommand{\tierthree}{}{\color{DarkGreen}}
-\DeclareDocumentCommand{\tierfour}{}{\color{blue}}
-\DeclareDocumentCommand{\tierfive}{}{\color{purple}}
+\DeclareDocumentCommand{\tierone}{o}{%
+  \IfNoValueTF{#1}{\color{red}}{\textcolor{red}{#1}}%
+}
+\DeclareDocumentCommand{\tiertwo}{o}{%
+  \IfNoValueTF{#1}%
+  {\color{orange}}{\textcolor{orange}{#1}}%
+}
+\DeclareDocumentCommand{\tierthree}{o}{%
+  \IfNoValueTF{#1}{\color{green}}{\textcolor{green}{#1}}%
+}
+\DeclareDocumentCommand{\tierfour}{o}{%
+  \IfNoValueTF{#1}%
+  {\color{green!50!blue}}{\textcolor{green!50!blue}{#1}}%
+}
+\DeclareDocumentCommand{\tierfive}{o}{%
+  \IfNoValueTF{#1}{\color{blue}}{\textcolor{blue}{#1}}
+}
 
 
 \begin{longtable}{p{2cm}p{7cm}llp{3cm}p{9cm}}
   \textbf{Acronym}\footnote{%
     {\tierone Tier 1}, {\tiertwo Tier 2}, {\tierthree Tier 3}, {\tierfour Tier 
-    4}, {\tierfive Tier 5}, Unknown ranking
+    4}, {\tierfive Tier 5}, Unknown ranking.
+    Sources: 
+    \url{http://icsd.i2r.a-star.edu.sg/staff/jianying/conference-ranking.html},
+    \url{http://faculty.cs.tamu.edu/guofei/sec_conf_stat.htm},
+    \url{https://personal.cis.strath.ac.uk/changyu.dong/ranking.html},
+    \url{http://academic.research.microsoft.com/RankList?entitytype=3&topdomainid=2&subdomainid=2&last=0&orderby=1},
+    \url{https://scholar.google.com/citations?view_op=top_venues&vq=eng_computersecuritycryptography},
+    \url{http://lipn.univ-paris13.fr/~bennani/CSRank.html},
+    \url{http://www.wi2.uni-erlangen.de/_fileuploads/research/generic/ranking/index.html}.
   } & \textbf{Title}
   & \textbf{Submission} & \textbf{Event} & \textbf{LaTeX format}
   & \textbf{Comment} \\
@@ -43,7 +56,8 @@
   \tierfour
   IFIP SEC & IFIP International Information Security and Privacy Conference
   & January & June & llncs, biblatex-lncs
-  & 14 pages total. \\
+  & 14 pages total.
+  \\
 
   \midrule
 
@@ -55,9 +69,11 @@
 
   \midrule
 
+  \tierone
   SIGCOMM & ACM Special Interest Group on Data Communication
   & January & August & acm-alternate
   & 12 pages excl.~references.
+  \tierone[Networking].
   \\
 
   \midrule
@@ -84,6 +100,7 @@
   PETS & Privacy Enhancing Technologies Symposium
   & February & July & acmproc
   & 10 pages excl.~bibliography and appendices, 15 pages total.
+  \tierone[PETs], \tierone[DOSN].
   \\
 
   \midrule
@@ -100,6 +117,15 @@
   SACMAT & ACM Symposium on Access Control Models and Technologies
   & February & June & acmproc
   & 10 US letter pages excl.~appendices, 12 pages total.
+  \\
+
+  \midrule
+
+  \tierfour
+  DBSec & Annual IFIP WG 11.3 Working Conference on Data and Applications 
+  Security and Privacy
+  & February & July & llncs, biblatex-lncs
+  & 16 pages total.
   \\
 
   \midrule
@@ -124,6 +150,16 @@
   PETS & Privacy Enhancing Technologies Symposium
   & April & July & acmproc
   & 10 pages excl.~bibliography and appendices, 15 pages total.
+  \tierone[PETs], \tierone[DOSN].
+  \\
+
+  \midrule
+
+  \tierone
+  TrustCom & IEEE/IFIP International Conference on Trust, Security and Privacy 
+  in Computing and Communications
+  & April & August & ieee
+  & 8 pages total.
   \\
 
   \midrule
@@ -155,9 +191,11 @@
 
   \midrule
 
+  \tiertwo
   P2P & International Conference on Peer-to-Peer Computing
   & April & September & ieee
   & 10 pages.
+  \tierone[Decentralized Systems, P2P].
   \\
 
   \midrule
@@ -178,11 +216,13 @@
 
   \midrule
 
+  \tiertwo
   COSN & ACM Conference on Online Social Networks
   & May & October & acmproc
   & Very selective.
   Full papers: 12 pages incl.~references.
   Short papers: 6 pages incl.~references.
+  \tierone[OSN].
   \\
 
   \midrule
@@ -215,6 +255,17 @@
 
   \midrule
 
+  DPM & International Workshop on Data Privacy Management
+  & June & September & llncs, biblatex-lncs
+  & Privacy Information Management; Privacy-oriented Access Control Languages 
+  and Models; Privacy Preserving Data Mining; \tierfive[Privacy in Social 
+  Networks]; Privacy Monitoring and Auditing; Privacy Services.
+  Regular papers: 16 pages incl.~references.
+  Short or position papers: 8 pages incl.~references.
+  \\
+
+  \midrule
+
   WPES & Workshop on Privacy in the Electronic Society
   & July & October & acmproc
   & Regular paper: 10 pages excl.~appendices, 12 pages total.
@@ -229,10 +280,20 @@
 
   \midrule
 
+  \tierone
   INFOCOM & IEEE International Conference on Computer Communications
   & July & April & ieee
   & Strict 9 pages total.
   IEEEtran: 10pt, conference, letterpaper.
+  \tierone[Network theory], practical + theoretical bounds.
+  \\
+
+  \midrule
+
+  \tierfive
+  ICISS & International Conference on Information Systems Security
+  & July & December & llncs, biblatex-lncs
+  & 20 pages incl.~references.
   \\
 
   \midrule
@@ -241,6 +302,7 @@
   PETS & Privacy Enhancing Technologies Symposium
   & August & July & acmproc
   & 10 pages excl.~bibliography and appendices, 15 pages total.
+  \tierone[PETs], \tierone[DOSN].
   \\
 
   \midrule
@@ -262,14 +324,17 @@
 
   \midrule
 
+  \tiertwo
   NSDI & USENIX Symposium on Networked Systems Design and Implementation
   & September & April & usenix
   & Not RoMEO green?
   12 pages excl.~references.
+  \tierone[Networking].
   \\
 
   \midrule
 
+  \tierone
   PERCOM & IEEE International Conference on Pervasive Computing and 
   Communications
   & September & March & ieee
@@ -296,6 +361,15 @@
 
   \midrule
 
+  \tierfive
+  SAC & ACM Symposium on Applied Computing
+  & September & April & acmproc
+  & Trust, Reputation, Evidence and other Collaboration Know-how (TRECK).
+  5000 words, 6 two-column pages.
+  \\
+
+  \midrule
+
   \tierfour
   PKC & IACR International Conference on Practice and Theory of Public-Key 
   Cryptography
@@ -316,10 +390,12 @@
 
   \midrule
 
+  \tierfive
   SeSoc & IEEE International Workshop on Security in Social Networking
   & October & March & ieee
   & 6 pages excl.~references and appendices, 7 pages total.
   Follow PERCOM instructions.
+  \tiertwo[OSN], small but relevant.
   \\
 
   \midrule
@@ -338,6 +414,7 @@
   PETS & Privacy Enhancing Technologies Symposium
   & November & July & acmproc
   & 10 pages excl.~bibliography and appendices, 15 pages total.
+  \tierone[PETs], \tierone[DOSN].
   \\
 
   \midrule
@@ -361,9 +438,12 @@
 
   \midrule
 
+  \tierone
   ICDCS & International Conference on Distributed Computing Systems
   & November & June & ieee
-  & Very selective, good for dist.sys.~of all kinds \\
+  & Very selective, good for dist.sys.~of all kinds.
+  \tierone[DOSN], \tierone[Decentralized Systems, P2P].
+  \\
 
   \bottomrule
 \end{longtable}
